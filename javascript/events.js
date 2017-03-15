@@ -18,4 +18,4 @@ people.forEach(function(person){
   });
 });
 
-james.emit('speak', 'i like big cock')
+james.emit('speak', 'oof')
