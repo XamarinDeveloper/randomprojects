@@ -10,8 +10,7 @@ def main():
     print('server started on port 3000')
     while True:
         data, addr = s.recvfrom(1024)
-        print('received message from: ' + str(addr))
-        print('from ' + str(addr) + ': ' + str(data))
+        print('received message from ' + str(addr) + ': ' + str(data))
         data = str(data).upper()
         print('sending ' + str(data) + ' to ' + str(addr))
         s.sendto(data, addr)
