@@ -27,5 +27,3 @@ while not quit:
         pass
 
 s.close()
-    
-
