@@ -8,6 +8,7 @@ def main():
     s.bind((host, port))
 
     print('server started on port 3000')
+    
     while True:
         data, addr = s.recvfrom(1024)
         print('received message from ' + str(addr) + ': ' + str(data))
