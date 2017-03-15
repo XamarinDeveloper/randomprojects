@@ -10,6 +10,7 @@ def main():
     s.listen(1)
     c, addr = s.accept()
     print('connection from: ' + str(addr))
+    
     while True:
         data = c.recv(1024)
         if not data:
